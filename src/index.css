@@ -87,7 +87,7 @@ canvas {
   }
 
   .hero-title {
-    @apply text-center font-light text-5xl md:text-6xl text-amber-50 opacity-0 max-md:mb-10 tracking-tight leading-tight
+    @apply text-center font-bold text-5xl md:text-7xl bg-gradient-to-r from-amber-200 via-amber-50 to-amber-200 bg-clip-text text-transparent opacity-0 max-md:mb-10 tracking-tighter leading-none drop-shadow-2xl
   }
 
   .hiw-title {
@@ -122,18 +122,5 @@ canvas {
     @apply opacity-0 translate-y-[100px]
   }
 
-  .skeleton {
-    @apply bg-gradient-to-r from-stone-700/50 via-amber-600/20 to-stone-700/50 bg-[length:200%_100%] animate-pulse
-  }
 
-  .skeleton-shimmer {
-    animation: shimmer 2s infinite linear;
-    background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.1), transparent);
-    background-size: 200% 100%;
-  }
-
-  @keyframes shimmer {
-    0% { background-position: -200% 0; }
-    100% { background-position: 200% 0; }
-  }
 }
