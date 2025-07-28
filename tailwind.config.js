@@ -4,14 +4,14 @@ export default {
   theme: {
     extend: {
       colors: {
-        blue: "#2997FF",
+        blue: "#fbbf24",
         gray: {
-          DEFAULT: "#86868b",
-          100: "#94928d",
-          200: "#afafaf",
-          300: "#42424570",
+          DEFAULT: "#d1d5db",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#374151",
         },
-        zinc: "#101010",
+        zinc: "#1f1f1f",
       },
     },
   },

@@ -9,12 +9,12 @@
 }
 
 body {
-  color: white;
+  color: #f9fafb;
   width: 100dvw;
   overflow-x: hidden;
   height: 100%;
-  background: #000;
-  border-color: #3b3b3b;
+  background: linear-gradient(135deg, #0c0a09 0%, #1c1917 50%, #292524 100%);
+  border-color: #78716c;
   user-select: none;
 }
 
@@ -39,15 +39,15 @@ canvas {
   }
 
   .btn {
-    @apply px-5 py-2 rounded-3xl bg-blue my-5 hover:bg-transparent border border-transparent hover:border hover:text-blue hover:border-blue
+    @apply px-8 py-3 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 text-black font-medium my-5 hover:from-amber-400 hover:to-orange-400 border border-transparent hover:shadow-xl hover:shadow-amber-500/30 transition-all duration-300 tracking-wide
   }
 
   .color-container {
-    @apply flex items-center justify-center px-4 py-4 rounded-full bg-gray-300 backdrop-blur
+    @apply flex items-center justify-center px-4 py-4 rounded-full bg-stone-700/80 backdrop-blur border border-amber-500/20
   }
 
   .size-btn-container {
-    @apply flex items-center justify-center p-1 rounded-full bg-gray-300 backdrop-blur ml-3 gap-1
+    @apply flex items-center justify-center p-1 rounded-full bg-stone-700/80 backdrop-blur ml-3 gap-1 border border-amber-500/20
   }
 
   .size-btn {
@@ -59,11 +59,11 @@ canvas {
   }
 
   .section-heading {
-    @apply text-gray lg:text-6xl md:text-5xl text-3xl lg:mb-0 mb-5 font-medium opacity-0 translate-y-20
+    @apply text-amber-100 lg:text-7xl md:text-6xl text-4xl lg:mb-0 mb-5 font-extralight opacity-0 translate-y-20 tracking-wide
   }
 
   .feature-text {
-    @apply text-gray max-w-md text-lg md:text-xl font-semibold opacity-0 translate-y-[100px]
+    @apply text-stone-300 max-w-md text-lg md:text-xl font-light opacity-0 translate-y-[100px] leading-relaxed
   }
 
   .feature-text-container {
@@ -79,15 +79,15 @@ canvas {
   }
 
   .link {
-    @apply text-blue hover:underline cursor-pointer flex items-center text-xl opacity-0 translate-y-20
+    @apply text-amber-400 hover:text-amber-300 cursor-pointer flex items-center text-lg font-medium opacity-0 translate-y-20 transition-all duration-300
   }
 
   .control-btn {
-    @apply ml-4 p-4 rounded-full bg-gray-300 backdrop-blur flex-center
+    @apply ml-4 p-4 rounded-full bg-stone-700/80 backdrop-blur flex-center border border-amber-500/20 hover:bg-stone-600/80 transition-all
   }
 
   .hero-title {
-    @apply text-center font-semibold text-3xl text-gray-100 opacity-0 max-md:mb-10
+    @apply text-center font-light text-5xl md:text-6xl text-amber-50 opacity-0 max-md:mb-10 tracking-tight leading-tight
   }
 
   .hiw-title {
@@ -95,7 +95,7 @@ canvas {
   }
 
   .hiw-subtitle {
-    @apply text-gray font-semibold text-xl md:text-2xl py-10 text-center
+    @apply text-stone-400 font-light text-xl md:text-2xl py-10 text-center leading-relaxed
   }
 
   .hiw-video {
@@ -107,11 +107,11 @@ canvas {
   }
 
   .hiw-text {
-    @apply text-gray text-xl font-normal md:font-semibold
+    @apply text-stone-300 text-lg font-light md:font-normal leading-relaxed
   }
 
   .hiw-bigtext {
-    @apply text-white text-3xl md:text-5xl font-normal md:font-semibold my-2
+    @apply text-amber-50 text-3xl md:text-5xl font-normal md:font-semibold my-2
   }
 
   .video-carousel_container {
@@ -120,5 +120,20 @@ canvas {
 
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
+  }
+
+  .skeleton {
+    @apply bg-gradient-to-r from-stone-700/50 via-amber-600/20 to-stone-700/50 bg-[length:200%_100%] animate-pulse
+  }
+
+  .skeleton-shimmer {
+    animation: shimmer 2s infinite linear;
+    background: linear-gradient(90deg, transparent, rgba(251, 191, 36, 0.1), transparent);
+    background-size: 200% 100%;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
   }
 }
