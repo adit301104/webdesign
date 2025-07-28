@@ -16,11 +16,10 @@ body {
   background: linear-gradient(135deg, #0c0a09 0%, #1c1917 50%, #292524 100%);
   border-color: #78716c;
   user-select: none;
-  -webkit-overflow-scrolling: touch;
 }
 
 canvas {
-  touch-action: pan-y;
+  touch-action: none;
 }
 
 .screen-max-width {

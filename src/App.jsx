@@ -5,6 +5,7 @@ import Model from './components/Model';
 import Features from './components/Features';
 import HowItWorks from './components/HowItWorks';
 import Footer from './components/Footer';
+import MobileScrollButton from './components/MobileScrollButton';
 
 import * as Sentry from '@sentry/react';
 
@@ -18,6 +19,7 @@ const App = () => {
       <Features />
       <HowItWorks />
       <Footer />
+      <MobileScrollButton />
     </main>
   )
 }
