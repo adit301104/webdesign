@@ -16,10 +16,11 @@ body {
   background: linear-gradient(135deg, #0c0a09 0%, #1c1917 50%, #292524 100%);
   border-color: #78716c;
   user-select: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 canvas {
-  touch-action: none;
+  touch-action: pan-y;
 }
 
 .screen-max-width {
@@ -121,6 +122,5 @@ canvas {
   .g_fadeIn {
     @apply opacity-0 translate-y-[100px]
   }
-
 
 }

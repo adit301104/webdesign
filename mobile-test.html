@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mobile Responsiveness Test</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0c0a09 0%, #1c1917 50%, #292524 100%);
+            color: white;
+            -webkit-overflow-scrolling: touch;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #78716c;
+            border-radius: 10px;
+        }
+        .scroll-test {
+            height: 200px;
+            overflow-y: auto;
+            background: rgba(255,255,255,0.1);
+            padding: 10px;
+            -webkit-overflow-scrolling: touch;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mobile Responsiveness Test</h1>
+    
+    <div class="test-section">
+        <h2>✅ Viewport Test</h2>
+        <p>This should fit properly on mobile screens without horizontal scrolling.</p>
+    </div>
+    
+    <div class="test-section">
+        <h2>✅ Scroll Test</h2>
+        <div class="scroll-test">
+            <p>This area should scroll smoothly on mobile devices.</p>
+            <p>Line 1</p><p>Line 2</p><p>Line 3</p><p>Line 4</p><p>Line 5</p>
+            <p>Line 6</p><p>Line 7</p><p>Line 8</p><p>Line 9</p><p>Line 10</p>
+            <p>Line 11</p><p>Line 12</p><p>Line 13</p><p>Line 14</p><p>Line 15</p>
+        </div>
+    </div>
+    
+    <div class="test-section">
+        <h2>✅ Touch Test</h2>
+        <button onclick="alert('Touch working!')" style="padding: 15px 30px; font-size: 16px;">
+            Tap Me
+        </button>
+    </div>
+    
+    <p><strong>Test Instructions:</strong></p>
+    <ul>
+        <li>Open this on a mobile device or use browser dev tools mobile view</li>
+        <li>Check that page fits without horizontal scroll</li>
+        <li>Test vertical scrolling works smoothly</li>
+        <li>Test that button tap works</li>
+    </ul>
+</body>
+</html>

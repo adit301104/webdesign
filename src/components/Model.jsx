@@ -89,7 +89,8 @@ const Model = () => {
                 bottom: 0,
                 left: 0,
                 right: 0,
-                overflow: 'hidden'
+                overflow: 'hidden',
+                pointerEvents: 'none'
               }}
               eventSource={document.getElementById('root')}
             >
